@@ -9,6 +9,8 @@ const H1 = styled.h1`
   color: #ecf87f;
   margin-left: 70px;
   display: inline-block;
+  position: relative;
+  z-index: 6;
 `
 export default function Logo() {
   return <H1 className="logo-text">TazzaCaffe</H1>
