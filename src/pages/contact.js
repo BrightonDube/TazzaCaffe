@@ -1,19 +1,10 @@
 import React from "react"
-import Navigation from "../components/Navigation"
-import Navigator from "../components/Navigator"
-import { Row, Col } from "react-bootstrap"
-import Logo from "../components/Logo"
+import Layout from "../components/Layout"
 
 export default function Contact() {
   return (
-    <div>
-      <Navigation />
-      <Navigator />
-      <Row>
-        <Col style={{ alignItems: "center" }}>
-          <Logo className="d-none d-sm-block"></Logo>
-        </Col>
-      </Row>
-    </div>
+    <Layout>
+      <h1>This is Contact</h1>
+    </Layout>
   )
 }

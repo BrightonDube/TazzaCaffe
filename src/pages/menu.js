@@ -1,20 +1,10 @@
 import React from "react"
-import Navigation from "../components/Navigation"
-import "bootstrap/dist/css/bootstrap.min.css"
-import Navigator from "../components/Navigator"
-import { Row, Col } from "react-bootstrap"
-import Logo from "../components/Logo"
+import Layout from "../components/Layout"
 
 export default function Menu() {
   return (
-    <div>
-      <Navigation />
-      <Navigator />
-      <Row>
-        <Col style={{ alignItems: "center" }}>
-          <Logo className="d-none d-sm-block" />
-        </Col>
-      </Row>
-    </div>
+    <Layout>
+      <h1>This is the Menu</h1>
+    </Layout>
   )
 }
