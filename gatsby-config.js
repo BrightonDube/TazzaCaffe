@@ -27,6 +27,10 @@ module.exports = {
             family: `Roboto`,
             subsets: [`latin`],
           },
+          {
+            family: `Kaushan Script`,
+            variants: [`400`],
+          },
         ],
       },
     },

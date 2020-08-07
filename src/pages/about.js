@@ -7,7 +7,6 @@ export default function About() {
     <div>
       <Navigation></Navigation>
       <Navigator />
-      <h1>About Us</h1>
     </div>
   )
 }

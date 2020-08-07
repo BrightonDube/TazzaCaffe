@@ -1,11 +1,12 @@
 import React from "react"
 import Navigation from "../components/Navigation"
+import Navigator from "../components/Navigator"
 
 export default function Contact() {
   return (
     <div>
       <Navigation></Navigation>
-      <h1>Contact Us</h1>
+      <Navigator />
     </div>
   )
 }
