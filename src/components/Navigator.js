@@ -7,8 +7,9 @@ const Navbar = styled.div`
   top: 0;
   left: 0;
   width: 60px;
-  height: 100vh;
+  min-height: 100%;
   background-color: #7fc03d;
+  z-index: 6;
 `
 export default function Navigator() {
   return (

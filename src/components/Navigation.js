@@ -8,6 +8,7 @@ const Navbar = styled.div`
   width: 100%;
   height: 60px;
   position: absolute;
+  z-index: 6;
   top: 0;
   left: 0;
   .logo {
@@ -19,7 +20,7 @@ export default function Navigation() {
   return (
     <div className="d-xs-block d-sm-none">
       <Navbar>
-        <Logo className="logo" />
+        <Logo className="logo mx-auto" />
         <MenuToggler></MenuToggler>
       </Navbar>
     </div>
