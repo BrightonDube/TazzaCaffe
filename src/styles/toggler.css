@@ -129,6 +129,7 @@ html {
 
 .logo {
   position: absolute;
+  display: none;
   top: 10px;
   left: 0px;
 }

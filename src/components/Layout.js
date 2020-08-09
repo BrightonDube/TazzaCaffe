@@ -26,20 +26,26 @@ export default function Layout({ children }) {
       <Navigation />
       <Navigator />
 
-      <Row>
-        <Col>
-          <Link to="/">
-            <Logo className="d-none d-sm-inline-block" />
-          </Link>
-
-          <Span>
-            <Link to="/menu/" className="bg_slider d-none d-sm-inline-block">
-              MENU
+      <Container fluid>
+        <Row>
+          <Col>
+            <Link to="/" className="d-none d-sm-inline-block">
+              <Logo />
             </Link>
-          </Span>
-        </Col>
-      </Row>
-      <Container fluid style={{ marginTop: "30px", marginLeft: "60px" }}>
+
+            <Span>
+              <Link to="/menu/" className="bg_slider d-none d-sm-inline-block">
+                MENU
+              </Link>
+            </Span>
+          </Col>
+        </Row>
+      </Container>
+      <Container
+        fluid
+        style={{ marginTop: "30px", paddingLeft: "80px" }}
+        className="no-gutters"
+      >
         {children}
       </Container>
     </div>

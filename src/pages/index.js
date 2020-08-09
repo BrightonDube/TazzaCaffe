@@ -7,12 +7,11 @@ export default function Home() {
   return (
     <Layout>
       <Row>
-        <Col className="text-center col-12 col-md-4">
+        <Col className="text-center col-12 col-md-4 order-last">
           <h1>The Home of Fresh Food</h1>
-          <h3>
+          <h3 className="text-justify">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
-            ratione repellendus doloribus quo, in commodi voluptatum provident
-            doloremque consequatur possimus sapiente.
+            ratione repellendus doloribus quo.
           </h3>
         </Col>
         <Col xs={12} md={8}>

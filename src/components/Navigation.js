@@ -5,7 +5,7 @@ import Logo from "../components/Logo"
 
 const Navbar = styled.div`
   background: #59981a;
-  width: 100%;
+  max-width: 100vw;
   height: 60px;
   position: absolute;
   z-index: 6;
@@ -18,11 +18,9 @@ const Navbar = styled.div`
 
 export default function Navigation() {
   return (
-    <div className="d-xs-block d-sm-none">
-      <Navbar>
-        <Logo className="logo mx-auto" />
-        <MenuToggler></MenuToggler>
-      </Navbar>
-    </div>
+    <Navbar className="d-xs-block d-sm-none">
+      <Logo className="logo mx-auto" />
+      <MenuToggler></MenuToggler>
+    </Navbar>
   )
 }
