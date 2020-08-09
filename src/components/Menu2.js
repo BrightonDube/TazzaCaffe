@@ -23,6 +23,18 @@ const Wrapper = styled.div`
   .remove-style {
     text-decoration: none;
   }
+  .menu-list {
+    list-style: none;
+    color: #085158;
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+  .menu-list > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    font-weight: bolder;
+  }
 `
 export default function Menu2() {
   return (
@@ -92,22 +104,22 @@ export default function Menu2() {
         </Col>
         <Col className="menu-items">
           <ul className="pl-3">
-            <li className="bg_slider">
+            <li className="bg_slider menu-list">
               <Link to="/" activeClassName="active">
                 Home
               </Link>
             </li>
-            <li className="menu-point">
+            <li className="menu-point menu-list">
               <Link to="/menu/" activeClassName="active">
                 Menu
               </Link>
             </li>
-            <li className="menu-point">
+            <li className="menu-point menu-list">
               <Link to="/about/" activeClassName="active">
                 About
               </Link>
             </li>
-            <li className="bg_slider">
+            <li className="bg_slider menu-list">
               <Link to="/contact/" activeClassName="active">
                 Contact
               </Link>
