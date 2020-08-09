@@ -7,25 +7,20 @@ export default function Home() {
   return (
     <Layout>
       <Row>
-        <Col className="text-center col-4">
+        <Col className="text-center col-12 col-md-4">
           <h1>The Home of Fresh Food</h1>
-          <p>
+          <h3>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
             ratione repellendus doloribus quo, in commodi voluptatum provident
-            doloremque consequatur possimus sapiente. Veritatis excepturi, error
-            libero ex ad consequatur voluptates dolor?
-          </p>
+            doloremque consequatur possimus sapiente.
+          </h3>
         </Col>
-        <Col xs={12} lg={8}>
+        <Col xs={12} md={8}>
           <img src={image} alt="home" className="img-responsive" />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          fugit tempora natus nobis molestias delectus esse beatae obcaecati.
-          Perferendis ad quo facilis illum harum autem vitae exercitationem
-          eaque tempora voluptates.
         </Col>
       </Row>
       <Row>
-        <Col className="text-center col-4">
+        <Col className="text-center col-12 col-md-4">
           <h1>The Home of Fresh Food</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas
@@ -36,10 +31,6 @@ export default function Home() {
         </Col>
         <Col xs={12} lg={8}>
           <img src={image} alt="home" className="img-responsive" />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
-          fugit tempora natus nobis molestias delectus esse beatae obcaecati.
-          Perferendis ad quo facilis illum harum autem vitae exercitationem
-          eaque tempora voluptates.
         </Col>
       </Row>
     </Layout>

@@ -23,6 +23,11 @@ const Wrapper = styled.div`
   .remove-style {
     text-decoration: none;
   }
+  .menu-container {
+    padding-left: 0;
+    margin-left: 16px;
+    max-width: 400px;
+  }
   .menu-list {
     list-style: none;
     color: #085158;
@@ -41,8 +46,7 @@ export default function Menu2() {
     <Wrapper className="menu">
       <Row>
         <Col
-          sm={{ span: 6, order: "last" }}
-          md={7}
+          sm={{ span: 5, order: "last" }}
           className="pt-5 mt-3 mt-sm-0 pt-sm-0"
         >
           <Row>
@@ -103,7 +107,7 @@ export default function Menu2() {
           </Row>
         </Col>
         <Col className="menu-items">
-          <ul className="pl-3">
+          <ul className="menu-container">
             <li className="bg_slider menu-list">
               <Link to="/" activeClassName="active">
                 Home
@@ -128,7 +132,9 @@ export default function Menu2() {
         </Col>
       </Row>
       <Row>
-        <Col xs={{ offset: "1" }}>Social media</Col>
+        <Col xs={{ offset: "1" }} style={{ backgroundColor: "red" }}>
+          Social media
+        </Col>
       </Row>
     </Wrapper>
   )
