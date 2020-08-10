@@ -20,9 +20,22 @@ const Span = styled.span`
   top: 5px;
   background-color: transparent;
 `
+const Wrapper = styled.div`
+  .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .pl-sm-6 {
+    padding-left: 60px !important;
+  }
+  .row {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+`
 export default function Layout({ children }) {
   return (
-    <div>
+    <Wrapper>
       <Navigation />
       <Navigator />
 
@@ -41,13 +54,9 @@ export default function Layout({ children }) {
           </Col>
         </Row>
       </Container>
-      <Container
-        fluid
-        style={{ marginTop: "30px", paddingLeft: "80px" }}
-        className="no-gutters"
-      >
+      <Container fluid className="pl-sm-6 pt-5 mt-2 pt-sm-0 mt-sm-0">
         {children}
       </Container>
-    </div>
+    </Wrapper>
   )
 }
