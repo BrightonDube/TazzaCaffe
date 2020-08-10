@@ -25,8 +25,10 @@ const Wrapper = styled.div`
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-  .pl-sm-6 {
-    padding-left: 60px !important;
+  @media only screen and (min-width: 575px) {
+    .pl-sm-6 {
+      padding-left: 60px !important;
+    }
   }
   .row {
     margin: 0 !important;
