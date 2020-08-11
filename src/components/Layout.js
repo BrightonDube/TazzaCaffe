@@ -68,7 +68,7 @@ export default function Layout({ children }) {
 
       <Container fluid>
         <Row>
-          <Col>
+          <Col style={{ backgroundColor: "#3A7A82" }}>
             <Link to="/" className="d-none d-sm-inline-block">
               <Logo />
             </Link>

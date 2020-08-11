@@ -134,12 +134,12 @@ export default function Menu2() {
                 Home
               </Link>
             </li>
-            <li className="menu-point menu-list">
+            <li className="bg_slider menu-list">
               <Link to="/menu/" activeClassName="active">
                 Menu
               </Link>
             </li>
-            <li className="menu-point menu-list">
+            <li className="bg_slider menu-list">
               <Link to="/about/" activeClassName="active">
                 About
               </Link>
