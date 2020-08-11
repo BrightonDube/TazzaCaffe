@@ -59,6 +59,23 @@ const Wrapper = styled.div`
   .menu-point:hover {
     background-position: 0% 100%;
   }
+
+  .footer {
+    background: #3a7a82;
+    color: #ecf87f;
+    a {
+      color: #ecf87f;
+    }
+    #facebook:hover {
+      color: #3b5998;
+    }
+    #instagram:hover {
+      color: #3f729b;
+    }
+    #twitter:hover {
+      color: #00acee;
+    }
+  }
 `
 export default function Layout({ children }) {
   return (
