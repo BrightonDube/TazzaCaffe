@@ -1,5 +1,6 @@
+//jshint esversion: 9
 import React from "react"
-import Layout from "../components/Layout" // highlight-line
+import Layout from "../components/Layout"
 import { Container, Row, Col, Carousel } from "react-bootstrap"
 import image1 from "../images/fried-eggs-846367_640.jpg"
 import image2 from "../images/bread-2178874_640.jpg"
@@ -9,6 +10,7 @@ import image5 from "../images/michael-browning-MtqG1lWcUw0-unsplash.jpg"
 import video from "../images/Insomnia - Restaurant Promo Video.mp4"
 import video2 from "../images/Making Coffee Montage Video - Sony A7s Metabones Test Footage Canon 50mm 1.4 + Macro Lens.mp4"
 import video3 from "../images/MVI_5662__1_.mp4"
+
 export default function Home() {
   return (
     <Layout>
