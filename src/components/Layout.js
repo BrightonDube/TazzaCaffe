@@ -12,7 +12,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 library.add(fab, faEnvelope)
-
+const year = new Date().getFullYear()
 const Span = styled.span`
   position: absolute;
   cursor: pointer;
@@ -40,6 +40,25 @@ const Wrapper = styled.div`
     margin: 0 !important;
     padding: 0 !important;
   }
+
+  .menu-point {
+    list-style: none;
+    text-decoration: none;
+    color: #ecf87f;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #3a7a82 50%, #d58844 50%);
+    -webkit-transition: background-position 1s;
+    -moz-transition: background-position 1s;
+    transition: background-position 1s;
+    transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
+      color 0.2s linear;
+    transition-delay: 0s, 0.15s;
+  }
+  .menu-point:hover {
+    background-position: 0% 100%;
+  }
 `
 export default function Layout({ children }) {
   return (
@@ -55,7 +74,7 @@ export default function Layout({ children }) {
             </Link>
 
             <Span>
-              <Link to="/menu/" className="bg_slider d-none d-sm-inline-block">
+              <Link to="/menu/" className="menu-point d-none d-sm-inline-block">
                 MENU
               </Link>
             </Span>

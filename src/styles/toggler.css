@@ -149,25 +149,6 @@ html {
   }
 }
 
-.menu-point {
-  list-style: none;
-  color: #085158;
-  font-size: 2.5rem;
-  padding: 1rem;
-  padding: 1rem;
-  background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #fff 50%, #d58844 50%);
-  -webkit-transition: background-position 1s;
-  -moz-transition: background-position 1s;
-  transition: background-position 1s;
-  transition: background-position 0.3s cubic-bezier(0.47, 0.1, 1, 0.63),
-    color 0.2s linear;
-  transition-delay: 0s, 0.15s;
-}
-
-.menu-point:hover {
-  background-position: 0% 100%;
-}
 .bg_slider {
   --initialTextColor: #245259;
   --slideTextColor: #fff;
