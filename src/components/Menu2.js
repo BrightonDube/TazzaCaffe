@@ -92,14 +92,14 @@ export default function Menu2() {
     <Wrapper className="menu">
       <Row>
         <Col
-          sm={{ span: 5, order: "last" }}
+          sm={{ span: 6, order: "last" }}
           className="pt-5 mt-3 mt-sm-0 pt-sm-0"
         >
           <Row>
             <Col className="m-0 p-0 text-center">
               <Card>
                 <Link to="/menu/" className="remove-style">
-                  <Card.Img variant="top" src={image4} />
+                  <Card.Img variant="top" src={image4} className="img-hover" />
                   <Card.Footer className="m-0 p-0">
                     <h1 className="menu-text m-0">MENU</h1>
                   </Card.Footer>
@@ -109,7 +109,7 @@ export default function Menu2() {
             <Col className="m-0 p-0 text-center">
               <Card>
                 <Link to="/contact/" className="remove-style">
-                  <Card.Img variant="top" src={image3} />
+                  <Card.Img variant="top" src={image3} className="img-hover" />
                   <Card.Footer className="m-0 p-0">
                     <h1 className="menu-text m-0">ORDER</h1>
                   </Card.Footer>
@@ -132,7 +132,7 @@ export default function Menu2() {
             <Col className="m-0 p-0 text-center">
               <Card>
                 <Link to="/contact/" className="remove-style">
-                  <Card.Img variant="top" src={image1} />
+                  <Card.Img variant="top" src={image1} className="img-hover" />
                   <Card.Footer className="m-0 p-0">
                     <h1 className="menu-text m-0">ORDER</h1>
                   </Card.Footer>
@@ -164,31 +164,31 @@ export default function Menu2() {
               </Link>
             </li>
           </ul>
-        </Col>
-      </Row>
-      <Row>
-        <Col xs={{ span: 10, offset: "1" }}>
-          <a
-            href="https//:facebook.com/brighton-dube"
-            className="mr-5"
-            id="facebook"
-          >
-            <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
-          </a>
-          <a
-            href="https//:instagram.com/bradubes"
-            className="mr-5"
-            id="instagram"
-          >
-            <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
-          </a>
-          <a
-            href="https//:twitter.com/InsculptInc"
-            className="mr-5"
-            id="twitter"
-          >
-            <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
-          </a>
+          <Row>
+            <Col xs={{ span: 10, offset: "1" }}>
+              <a
+                href="https//:facebook.com/brighton-dube"
+                className="mr-5"
+                id="facebook"
+              >
+                <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
+              </a>
+              <a
+                href="https//:instagram.com/bradubes"
+                className="mr-5"
+                id="instagram"
+              >
+                <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
+              </a>
+              <a
+                href="https//:twitter.com/InsculptInc"
+                className="mr-5"
+                id="twitter"
+              >
+                <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
+              </a>
+            </Col>
+          </Row>
         </Col>
       </Row>
     </Wrapper>
