@@ -6,7 +6,7 @@ import image2 from "../images/bread-2178874_640.jpg"
 import image3 from "../images/close-up-1854245_640.jpg"
 import image4 from "../images/meal-918638_640.jpg"
 import { Link } from "gatsby"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Social from "./Social"
 
 const Wrapper = styled.div`
   position: absolute;
@@ -74,18 +74,6 @@ const Wrapper = styled.div`
     border: 1px solid #000;
   }
 
-  a {
-    color: #085158;
-  }
-  #facebook:hover {
-    color: #3b5998;
-  }
-  #instagram:hover {
-    color: #3f729b;
-  }
-  #twitter:hover {
-    color: #00acee;
-  }
   .card {
     overflow: hidden;
   }
@@ -169,27 +157,7 @@ export default function Menu2() {
           </ul>
           <Row>
             <Col xs={{ span: 10, offset: "1" }}>
-              <a
-                href="https//:facebook.com/brighton-dube"
-                className="mr-5"
-                id="facebook"
-              >
-                <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
-              </a>
-              <a
-                href="https//:instagram.com/bradubes"
-                className="mr-5"
-                id="instagram"
-              >
-                <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
-              </a>
-              <a
-                href="https//:twitter.com/InsculptInc"
-                className="mr-5"
-                id="twitter"
-              >
-                <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
-              </a>
+              <Social />
             </Col>
           </Row>
         </Col>

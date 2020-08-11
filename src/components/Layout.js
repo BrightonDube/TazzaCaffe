@@ -9,9 +9,10 @@ import styled from "styled-components"
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fab } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Social from "../components/Social"
 
 library.add(fab, faEnvelope)
+
 const year = new Date().getFullYear()
 const Span = styled.span`
   position: absolute;
@@ -65,15 +66,6 @@ const Wrapper = styled.div`
     color: #ecf87f;
     a {
       color: #ecf87f;
-    }
-    #facebook:hover {
-      color: #3b5998;
-    }
-    #instagram:hover {
-      color: #3f729b;
-    }
-    #twitter:hover {
-      color: #00acee;
     }
   }
 `
@@ -132,27 +124,7 @@ export default function Layout({ children }) {
             sm={6}
             className="my-5 px-3 text-right align-self-center"
           >
-            <a
-              href="https//:facebook.com/brighton-dube"
-              className="mr-5"
-              id="facebook"
-            >
-              <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
-            </a>
-            <a
-              href="https//:instagram.com/bradubes"
-              className="mr-5"
-              id="instagram"
-            >
-              <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
-            </a>
-            <a
-              href="https//:twitter.com/InsculptInc"
-              className="mr-5"
-              id="twitter"
-            >
-              <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
-            </a>
+            <Social />
           </Col>
         </Row>
       </Container>
