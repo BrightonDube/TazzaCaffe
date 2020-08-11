@@ -3,9 +3,15 @@ import Navigation from "../components/Navigation"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Navigator from "../components/Navigator"
 import Logo from "../components/Logo"
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { fab } from "@fortawesome/free-brands-svg-icons"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+library.add(fab, faEnvelope)
 
 const Span = styled.span`
   position: absolute;
