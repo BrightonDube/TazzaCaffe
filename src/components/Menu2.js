@@ -73,6 +73,19 @@ const Wrapper = styled.div`
     height: 30px;
     border: 1px solid #000;
   }
+
+  a {
+    color: #085158;
+  }
+  #facebook:hover {
+    color: #3b5998;
+  }
+  #instagram:hover {
+    color: #3f729b;
+  }
+  #twitter:hover {
+    color: #00acee;
+  }
 `
 export default function Menu2() {
   return (
