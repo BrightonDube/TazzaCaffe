@@ -6,6 +6,7 @@ import image2 from "../images/bread-2178874_640.jpg"
 import image3 from "../images/close-up-1854245_640.jpg"
 import image4 from "../images/meal-918638_640.jpg"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Wrapper = styled.div`
   position: absolute;
@@ -94,7 +95,7 @@ export default function Menu2() {
             </Col>
             <Col className="m-0 p-0 text-center">
               <Card>
-                <Link to="/about/" className="remove-style">
+                <Link to="/contact/" className="remove-style">
                   <Card.Img variant="top" src={image3} />
                   <Card.Footer className="m-0 p-0">
                     <h1 className="menu-text m-0">ORDER</h1>
@@ -117,7 +118,7 @@ export default function Menu2() {
             </Col>
             <Col className="m-0 p-0 text-center">
               <Card>
-                <Link to="/about/" className="remove-style">
+                <Link to="/contact/" className="remove-style">
                   <Card.Img variant="top" src={image1} />
                   <Card.Footer className="m-0 p-0">
                     <h1 className="menu-text m-0">ORDER</h1>
@@ -153,8 +154,28 @@ export default function Menu2() {
         </Col>
       </Row>
       <Row>
-        <Col xs={{ offset: "1" }} style={{ backgroundColor: "red" }}>
-          Social media
+        <Col xs={{ span: 10, offset: "1" }}>
+          <a
+            href="https//:facebook.com/brighton-dube"
+            className="mr-5"
+            id="facebook"
+          >
+            <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
+          </a>
+          <a
+            href="https//:instagram.com/bradubes"
+            className="mr-5"
+            id="instagram"
+          >
+            <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
+          </a>
+          <a
+            href="https//:twitter.com/InsculptInc"
+            className="mr-5"
+            id="twitter"
+          >
+            <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
+          </a>
         </Col>
       </Row>
     </Wrapper>
