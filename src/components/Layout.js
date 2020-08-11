@@ -83,6 +83,61 @@ export default function Layout({ children }) {
       </Container>
       <Container fluid className="pl-sm-6 pt-5 mt-2 pt-sm-0 mt-sm-0">
         {children}
+        <Row className="no-gutters">
+          <Col className="mx-auto my-5 col-md-8 text-center align-self-center">
+            <h1>
+              Sign up for our Newsletter and never miss out on any of our
+              promos.
+            </h1>
+            <Button variant="warning" className="px-5">
+              Sign Up
+            </Button>
+          </Col>
+        </Row>
+        <Row className="no-gutters footer">
+          <Col xs={12} sm={6} className="my-5 text-center align-self-center">
+            <span className="menu-point">&copy; {year} </span>
+            <Link to="/" className="menu-point">
+              Home
+            </Link>
+            <Link to="/about/" className="menu-point">
+              About
+            </Link>
+            <Link to="/menu/" className="menu-point">
+              Menu
+            </Link>
+            <Link to="/order/" className="menu-point">
+              Order Online
+            </Link>
+          </Col>
+          <Col
+            xs={12}
+            sm={6}
+            className="my-5 px-3 text-right align-self-center"
+          >
+            <a
+              href="https//:facebook.com/brighton-dube"
+              className="mr-5"
+              id="facebook"
+            >
+              <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
+            </a>
+            <a
+              href="https//:instagram.com/bradubes"
+              className="mr-5"
+              id="instagram"
+            >
+              <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
+            </a>
+            <a
+              href="https//:twitter.com/InsculptInc"
+              className="mr-5"
+              id="twitter"
+            >
+              <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
+            </a>
+          </Col>
+        </Row>
       </Container>
     </Wrapper>
   )
