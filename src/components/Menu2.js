@@ -86,6 +86,9 @@ const Wrapper = styled.div`
   #twitter:hover {
     color: #00acee;
   }
+  .card {
+    overflow: hidden;
+  }
 `
 export default function Menu2() {
   return (
