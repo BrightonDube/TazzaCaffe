@@ -68,6 +68,10 @@ const Wrapper = styled.div`
       color: #ecf87f;
     }
   }
+  .newsletter {
+    background: #dc5719;
+    color: #fff;
+  }
 `
 export default function Layout({ children }) {
   return (
@@ -92,7 +96,7 @@ export default function Layout({ children }) {
       </Container>
       <Container fluid className="pl-sm-6 pt-5 mt-2 pt-sm-0 mt-sm-0">
         {children}
-        <Row className="no-gutters">
+        <Row className="no-gutters newsletter">
           <Col className="mx-auto my-5 col-md-8 text-center align-self-center">
             <h1>
               Sign up for our Newsletter and never miss out on any of our

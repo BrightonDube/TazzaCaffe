@@ -29,27 +29,25 @@ export default function Contact() {
           <Social />
         </Col>
         <Col className="col-12 col-sm-7 align-self-center p-5">
-          <Form noValidate validated={validated} onSubmit={handleSubmit}>
+          <Form
+            noValidate
+            validated={validated}
+            onSubmit={handleSubmit}
+            className="contact-form"
+          >
             <Form.Row>
               <Form.Group as={Col} md="4" controlId="validationCustom01">
                 <Form.Label>First name</Form.Label>
-                <Form.Control
-                  required
-                  type="text"
-                  placeholder="First name"
-                  defaultValue="Mark"
-                />
+                <Form.Control required type="text" placeholder="First name" />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </Form.Group>
               <Form.Group as={Col} md="4" controlId="validationCustom02">
                 <Form.Label>Last name</Form.Label>
-                <Form.Control
-                  required
-                  type="text"
-                  placeholder="Last name"
-                  defaultValue="Otto"
-                />
+                <Form.Control required type="text" placeholder="Last name" />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
+                <Form.Control.Feedback type="invalid">
+                  This can't be blank
+                </Form.Control.Feedback>
               </Form.Group>
             </Form.Row>
             <Form.Row>
@@ -58,6 +56,7 @@ export default function Contact() {
                 <Form.Control type="text" placeholder="Subject" required />
                 <Form.Control.Feedback>Looks Good!</Form.Control.Feedback>
               </Form.Group>
+
               <Form.Group controlId="formGroupEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" required />
@@ -67,7 +66,7 @@ export default function Contact() {
               </Form.Group>
             </Form.Row>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Label>Example textarea</Form.Label>
+              <Form.Label>Message</Form.Label>
               <Form.Control as="textarea" rows="3" />
             </Form.Group>
             <Form.Group>
