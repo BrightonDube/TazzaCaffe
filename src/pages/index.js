@@ -8,7 +8,6 @@ import image3 from "../images/close-up-1854245_640.jpg"
 import image4 from "../images/meal-918638_640.jpg"
 import image5 from "../images/michael-browning-MtqG1lWcUw0-unsplash.jpg"
 import video from "../images/Insomnia - Restaurant Promo Video.mp4"
-import video2 from "../images/Making Coffee Montage Video - Sony A7s Metabones Test Footage Canon 50mm 1.4 + Macro Lens.mp4"
 import video3 from "../images/MVI_5662__1_.mp4"
 
 export default function Home() {

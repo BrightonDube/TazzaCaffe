@@ -19,17 +19,13 @@ const Wrapper = styled.div`
 export default function Social() {
   return (
     <Wrapper>
-      <a
-        href="https//:facebook.com/brighton-dube"
-        className="mr-5"
-        id="facebook"
-      >
+      <a href="https//:facebook.com/tazzacafe" className="mr-5" id="facebook">
         <FontAwesomeIcon icon={["fab", "facebook"]} size="2x" />
       </a>
-      <a href="https//:instagram.com/bradubes" className="mr-5" id="instagram">
+      <a href="https//:instagram.com/tazzacafe" className="mr-5" id="instagram">
         <FontAwesomeIcon icon={["fab", "instagram"]} size="2x" />
       </a>
-      <a href="https//:twitter.com/InsculptInc" className="mr-5" id="twitter">
+      <a href="https//:twitter.com/tazzacafe" className="mr-5" id="twitter">
         <FontAwesomeIcon icon={["fab", "twitter"]} size="2x" />
       </a>
     </Wrapper>
