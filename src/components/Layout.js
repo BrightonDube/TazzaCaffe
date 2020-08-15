@@ -94,7 +94,7 @@ export default function Layout({ children }) {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="pl-sm-6 pt-5 mt-2 pt-sm-0 mt-sm-0">
+      <Container fluid className="pl-sm-6 pt-5 mt-4 pt-sm-0 mt-sm-0">
         {children}
         <Row className="no-gutters newsletter">
           <Col className="mx-auto my-5 col-md-8 text-center align-self-center">

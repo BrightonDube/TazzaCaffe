@@ -36,12 +36,12 @@ export default function Contact() {
             className="contact-form"
           >
             <Form.Row>
-              <Form.Group as={Col} md="4" controlId="validationCustom01">
+              <Form.Group as={Col} md="6" controlId="validationCustom01">
                 <Form.Label>First name</Form.Label>
                 <Form.Control required type="text" placeholder="First name" />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
               </Form.Group>
-              <Form.Group as={Col} md="4" controlId="validationCustom02">
+              <Form.Group as={Col} md="6" controlId="validationCustom02">
                 <Form.Label>Last name</Form.Label>
                 <Form.Control required type="text" placeholder="Last name" />
                 <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
@@ -51,18 +51,17 @@ export default function Contact() {
               </Form.Group>
             </Form.Row>
             <Form.Row>
-              <Form.Group as={Col} md="6" controlId="validationCustom03">
-                <Form.Label>Subject</Form.Label>
-                <Form.Control type="text" placeholder="Subject" required />
-                <Form.Control.Feedback>Looks Good!</Form.Control.Feedback>
-              </Form.Group>
-
-              <Form.Group controlId="formGroupEmail">
+              <Form.Group as={Col} md="6" controlId="formGroupEmail">
                 <Form.Label>Email address</Form.Label>
                 <Form.Control type="email" placeholder="Enter email" required />
                 <Form.Control.Feedback type="invalid">
                   Please enter a valid email address!
                 </Form.Control.Feedback>
+              </Form.Group>
+              <Form.Group as={Col} md="6" controlId="validationCustom03">
+                <Form.Label>Subject</Form.Label>
+                <Form.Control type="text" placeholder="Subject" required />
+                <Form.Control.Feedback>Looks Good!</Form.Control.Feedback>
               </Form.Group>
             </Form.Row>
             <Form.Group controlId="exampleForm.ControlTextarea1">
