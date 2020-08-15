@@ -1,16 +1,22 @@
 import React from "react"
 import styled from "styled-components"
+import logo from "../images/logo.png"
+import Img from "gatsby-image"
+import { useStaticQuery, graphql } from "gatsby"
 
-const H1 = styled.h1`
+const Wrap = styled.div`
   width: 140px;
-  font-family: "Kaushan Script";
-  font-size: 2rem;
-  color: #ecf87f;
   margin-left: 70px;
   display: inline-block;
   position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
   z-index: 6;
 `
 export default function Logo() {
-  return <H1 className="logo-text">TazzaCaffe</H1>
+  return (
+    <Wrap>
+      <img src={logo} alt="Logo" className="w-100 img-fluid" />
+    </Wrap>
+  )
 }

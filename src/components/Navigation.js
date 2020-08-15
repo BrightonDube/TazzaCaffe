@@ -4,9 +4,9 @@ import MenuToggler from "./MenuToggler"
 import Logo from "../components/Logo"
 
 const Navbar = styled.div`
-  background: #59981a;
+  background: #94cdd5;
   max-width: 100vw;
-  height: 60px;
+  height: 70px;
   position: absolute;
   z-index: 6;
   top: 0;

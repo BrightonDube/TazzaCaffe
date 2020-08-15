@@ -24,7 +24,7 @@ const Span = styled.span`
   display: inline-block;
   text-decoration: none;
   z-index: 6;
-  top: 5px;
+  top: 10px;
   background-color: transparent;
 `
 const Wrapper = styled.div`
@@ -45,11 +45,11 @@ const Wrapper = styled.div`
   .menu-point {
     list-style: none;
     text-decoration: none;
-    color: #ecf87f;
+    color: #245259;
     font-size: 1rem;
     padding: 0.5rem;
     background-size: 100% 200%;
-    background-image: linear-gradient(to bottom, #3a7a82 50%, #d58844 50%);
+    background-image: linear-gradient(to bottom, #94cdd5 50%, #d58844 50%);
     -webkit-transition: background-position 1s;
     -moz-transition: background-position 1s;
     transition: background-position 1s;
@@ -62,14 +62,14 @@ const Wrapper = styled.div`
   }
 
   .footer {
-    background: #3a7a82;
-    color: #ecf87f;
+    background: #94cdd5;
+    color: #245259;
     a {
-      color: #ecf87f;
+      color: #245259;
     }
   }
   .newsletter {
-    background: #dc5719;
+    background: #e39e0d;
     color: #fff;
   }
 `
@@ -81,7 +81,7 @@ export default function Layout({ children }) {
 
       <Container fluid>
         <Row>
-          <Col style={{ backgroundColor: "#3A7A82" }}>
+          <Col style={{ backgroundColor: "#94CDD5" }}>
             <Link to="/" className="d-none d-sm-inline-block">
               <Logo />
             </Link>
@@ -102,7 +102,7 @@ export default function Layout({ children }) {
               Sign up for our Newsletter and never miss out on any of our
               promos.
             </h1>
-            <Button variant="warning" className="px-5">
+            <Button variant="success" className="px-5">
               Sign Up
             </Button>
           </Col>

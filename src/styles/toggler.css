@@ -115,7 +115,7 @@ html {
   transition: 1s;
   padding-left: 0;
   margin-left: 0;
-  background-color: #fff;
+  background-color: #94cdd5;
 }
 .menu-wrap .toggler:checked ~ .menu {
   visibility: visible;
@@ -140,12 +140,7 @@ html {
     visibility: hidden;
   }
   .menu-wrap {
-    top: -48px;
-  }
-}
-@media only screen and (min-width: 575px) {
-  .logo-text {
-    color: #245259 !important;
+    top: -78px;
   }
 }
 
@@ -153,7 +148,7 @@ html {
   --initialTextColor: #245259;
   --slideTextColor: #fff;
 
-  --initialBgColor: #fff;
+  --initialBgColor: #94cdd5;
   --slideBgColor: #d58844;
 
   color: var(--initialTextColor);
